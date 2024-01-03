@@ -1,38 +1,85 @@
 .App {
+  margin: 0;
+  padding: 0;
+  background-image: url("../public/logo.jpg");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  transition: 'background 0.5s ease';
+}
+
+.title {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 0rem;
+}
+
+.subTitle {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  margin-top: -0.5rem;
+}
+
+.textTitle {
+  text-align: center;
+  color: white;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.Icon{
+  width: 4rem;
+}
+
+.btnContainer{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+  width: 8rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.timeCounter{
+  margin: 1rem auto;
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.counterItem{
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.timerBox{
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itemText{
+font-size: 0.8rem;
+padding: 0.2rem;
+font-weight: 600;
+margin-top: -0.2rem;
 }
